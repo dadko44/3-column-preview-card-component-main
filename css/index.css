@@ -1,0 +1,91 @@
+:root{
+    --sedans-color: hsl(31, 77%, 52%);
+    --suvs-color: hsl(184, 100%, 22%);
+    --lux-color: hsl(179, 100%, 13%);
+}
+body{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 4.5rem 2rem 4rem 2rem;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    box-shadow: none;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+button :hover{
+    background-color: white;
+}
+.center-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin: auto;
+    line-height: 1.5rem;
+}
+.car-type-section{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 3rem 2.5rem 3rem 3rem;
+}
+.sedans-section{
+    background-color: var(--sedans-color);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.suvs-section{
+    background-color: var(--suvs-color);
+}
+.lux-section{
+    background-color: var(--lux-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.sedans-color{
+    color: var(--sedans-color);
+}
+.suvs-color{
+    color: var(--suvs-color)
+}
+.lux-color{
+    color: var(--lux-color);
+}
+.attribution{
+    margin-top: 2rem;
+    text-align: center;
+    color: black;
+    font-family: 'Lexend Deca', sans-serif;
+}
+@media (min-width: 1010px) {
+    body{
+        padding-top: 8rem;
+    }
+    button{
+        position: absolute;
+        bottom: 3rem;
+    }
+    .center-content-wrapper{
+        flex-direction: row;
+        max-width: max-content;
+        word-break: keep-all;
+        position: relative;
+    }
+    .car-type-section{
+        max-width: 225px;
+        min-height: 400px;
+    }
+    .sedans-section{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .lux-section{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+}
